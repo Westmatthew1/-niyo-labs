@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Satoshi", sans-serif;
+
+}
+
+
+
+.Niyo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 90%;
+}
+
+.nav-links {
+  font-size: 1.2rem;
+  list-style: none;
+  margin-left: auto;
+  height: auto;
+  margin-top: -25px;
+  margin-bottom: 15%;
+  width: 500px;
+  justify-content: space-around;
+
+  display: flex;
+}
+nav li a {
+  text-decoration: none;
+
+  color: #333;
+}
+nav a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+#img {
+  width: 50px;
+  height: 50px;
+}
+p {
+  font-size: 1.25rem;
+  max-width: 100%;
+}
+#img {
+  width: 100px;
+  height: auto;
+}
+
+img {
+  width: 270px;
+}
+
+button {
+  padding: 10px 30px;
+  font-weight: 500;
+
+  background-color: black;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  color: rgb(221, 221, 33);
+  transform: scale(1.05);
+
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-weight: 300;
+  font-size: 1rem;
+  border-radius: 40px;
+}
+button:hover {
+  background-color: #333;
+  color: rgb(226, 226, 116);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform0.2s ease;
+}
+button:active {
+  background-color: green;
+  transform: scale(0.97);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  color: rgb(221, 221, 33);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  padding-top: 50px;
+  border-radius: 5px;
+  font-family: "Satoshi", sans-serif;
+}
+.hero-section {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 50px;
+  color: #111;
+  text-align: center;
+  padding: 10px 20px;
+}
+@media (max-width: 240px) and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 8px 16px;
+    align-items: flex-end;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    gap: 10px;
+  }
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+  .container {
+    width: 25rem;
+    margin-left: 25px;
+  }
+  .hero-section {
+    border-radius: 8px;
+  }
+
+  h1 {
+    width: 100%;
+  }
+  img {
+    width: 270px;
+  }
+
+  .btn {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 50%;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform0.2s ease;
+  }
+  button {
+    width: 50%;
+    border-radius: 40px;
+    background-color: #333;
+    color: rgb(226, 226, 116);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform0.2s ease;
+
+  }
+  button:hover {
+    background-color: #111;
+    color: rgb(221, 221, 33);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  }
+  button:active {
+    background-color: red;
+    transform: scale(0.97);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (max-width: 600px) and (min-width: 200px) {
+  .navbar {
+    flex-direction: column;
+    padding: 8px 16px;
+    align-items: flex-end;
+  }
+  .nav-links {
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    gap: 5px;
+  }
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+  .Niyo-logo {
+    align-content: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 200px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section {
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) and (min-width: 200px) {
+  .btn {
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  button {
+    width: 70%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 200px) {
+  img {
+    width: 80%;
+    height: auto;
+  }
+  #img {
+    width: 50%;
+    height: 45%;
+    align-self: self-start;
+  }
+  .Niyo-text {
+    max-width: 400px;
+  }
+
+  .hero-section img {
+    width: 50%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
